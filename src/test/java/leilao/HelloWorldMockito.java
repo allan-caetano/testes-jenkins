@@ -13,9 +13,15 @@ public class HelloWorldMockito {
 	
 	@Test
 	void hello() {
+
+		boolean correto = false;
 		LeilaoDao mock = Mockito.mock(LeilaoDao.class);
 		List<Leilao> todos = mock.buscarTodos();
 		Assert.assertTrue(todos.isEmpty());
+		Assert.assertTrue(correto);
+	    String text = "Done";
+		System.out.println(text);
 	}
+
 
 }
