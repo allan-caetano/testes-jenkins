@@ -58,7 +58,7 @@ class GeradorDePagamentoTest {
 		
 		Pagamento pagamento = captor.getValue();
 		
-		Assert.assertEquals(data.plusDays(1), 
+		Assert.assertEquals(data.plusDays(1),
 				pagamento.getVencimento());
 		Assert.assertEquals(vencedor.getValor(), pagamento.getValor());
 		Assert.assertFalse(pagamento.getPago());
