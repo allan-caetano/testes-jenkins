@@ -16,6 +16,9 @@ public class HelloWorldMockito {
 		LeilaoDao mock = Mockito.mock(LeilaoDao.class);
 		List<Leilao> todos = mock.buscarTodos();
 		Assert.assertTrue(todos.isEmpty());
+
+		System.out.println("Build Feito");
 	}
+
 
 }
